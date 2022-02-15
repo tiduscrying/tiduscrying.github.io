@@ -52,14 +52,35 @@ So what the hell was going on with the display? Did I somehow maybe short someth
 
 After reseating the connection and securing it with some electrical tape, I put the bezel back on and everything was working as intended. First _massive_ hurdle overcome, but still plenty of little bumps in the road to come. At this point, I am curious if the BIOS was truly broken beforehand or not. For all I know, maybe I was getting _some_ sort of signal to the panel, but couldn't see it because it was unplugged? That being said, it worked now so I stopped worrying about it and kept going. 
 
-Next order of business was to install an OS and get the flashed BIOS up-to-date. I started with just basic Windows 10 on a 2.5" SSD. The flashed BIOS I had downloaded was version `2.56`, but Lenovo was already up to `2.77`. Apparently they have been supporting the T440P with updates to vulnerabiliies for quite some time, which is nice to see. Luckily, the update went without issues and everything appeared to be working in the OS. At this point, the  replacement motherboard I had ordered in desparation set to arrive in the mail in a few days, but I felt as if messaging the seller and trying to send it back wouldn't be worth it at this point. The replacement board wasn't _too_ expensive and I figured having a spare would be convenient if things went south again.
+Next order of business was to install an OS and get the flashed BIOS up-to-date. I started with just basic Windows 10 on the new SSD. The flashed BIOS I had downloaded was version `2.56`, but Lenovo was already up to `2.77`. Apparently they have been supporting the T440P with updates to vulnerabiliies for quite some time, which is nice to see. Luckily, the update went without issues and everything appeared to be working in the OS. At this point, the  replacement motherboard I had ordered in desparation set to arrive in the mail in a few days, but I felt as if messaging the seller and trying to send it back wouldn't be worth it at this point. The replacement board wasn't _too_ expensive and I figured having a spare would be convenient if things went south again.
 
 To my genuine surprise, the model I had was the variant with a discrete Nvidia 730M GPU. I had read beforehand that this model was "not worth it" due to the poor performance overall of the 730M compared to the Intel HD graphics and additional drawbacks that came from having a discrete GPU. The replacement motherboard I had on the way appeared to be one without the Nvidia GPU, so I had my options if things didn't work out with this board. Windows 10 detected all of the hardware devices and Lenovo's System Updater made short work of fetching  updates. 
 
 Updating the BIOS was simple enough. After downloading the normal executable off Lenovo's site, all I had to do was run it and wait for the laptop to reboot. After that, it went back into Windows and was working without a hitch.
 
-With a renewed confidence in myself and now knowing that my BIOS flasher could work wonders, I decided I wanted to proceed with dumping the good BIOS and removing the BIOS whitelist myself. I figured having a backup of the known working BIOS as it was now would be beneficial if something else went wrong. Luckily, the process to removing the whitelist and enabling the "advanced menu" for the T440P is incredibly well documented. After consulting a few GitHub pages and a very solid YouTube video, I was able to dump eveything, modify the BIOS files and reflash without any issues at all. I went ahead and installed a Dell DW1820a Wireless AC card and had no problems getting both bluetooth and Wifi to work in Windows after installing some drivers. 
+With a renewed confidence in myself and now knowing that my BIOS flasher could work wonders, I decided I wanted to proceed with dumping the good BIOS and removing the BIOS whitelist myself. I figured having a backup of the known working BIOS as it was now would be beneficial if something else went wrong. Luckily, the process to removing the whitelist and enabling the "advanced menu" for the T440P is incredibly well documented. After consulting a few GitHub pages and a very solid YouTube video, I was able to dump eveything, modify the BIOS files and reflash without any issues at all. I went ahead and installed a Dell DW1820a Wireless AC card that I previously had for the T440S hackintosh and had no problems getting both bluetooth and Wifi to work in Windows after installing drivers. 
 
 # The True Cost of a $49 ThinkPad
 ![please don't judge me based on my love for 2B](https://github.com/tiduscrying/tiduscrying.github.io/raw/main/_images/t440p/PXL_20220112_061511967.jpg)
-At this point, I had sank a lot more money into the project than I had originally wanted to. 
+
+At this point, I had sank a bit more money into the project than I had originally intended to. Even though I knew going into the project that I would be spending a bit to get replace the missing components, I didn't forsee also having to order a replacement motherboard. 
+
+Breaking down the cost of everything I needed to get it up and running:
+- The laptop itself - $69.44
+- Replacement 1080p panel - $95.18
+- Replacement backlit keyboard - $36.99
+- 9 cell battery off Amazon - $43.99
+- Replacement BIOS flasher clips & new CMOS battery - $27.26
+- 8GB DDR3L stick of RAM - $19.83
+- Transcend 250GB M2 SATA 2240 SSD - $50.98
+- Not counted - upgraded components (maybe I'll discuss them in the next post)
+
+**Grand Total?:** $343.67
+
+For a 4th gen i5 4200M, 8GB of RAM and a 250GB SSD... Maybe not the _best_ price ever. Truth be told, if I spent a bit more time looking on eBay, I might have been able to find something with less things missing. I most certainly could have found something that posted to the BIOS and at least had a functioning display. But at the end of the day, I had fun doing all of this. Sure, it was money and time spent on something that some may call obsolete, but it's things like this that I _genuinely_ enjoy doing. Laptops don't come like this anymore. You are lucky if you can get a modern laptop with a replaceable SSD, let alone have access to well documented parts lists and easily accessible components. The ThinkPads of yore are testaments to movements such as "Right to Repair" and stand in their own little corner for nerds like me to drool over. 
+
+I did end up upgrading the processor, trying different cooling solutions, adding USB-C charging and turning the T440P into a very usable Hackintosh, but given how long this post already is (and how I tend to ramble), I'll try to make it a new post.
+
+If you've stumbled upon this post and managed to stick around until now, thanks for giving it a read. I already have more things I want to talk about once I figure out how to get Jekyll and this blog up and running. Stay tuned in if you're interested!
+
+~ Tiduscrying (02-14-22)
