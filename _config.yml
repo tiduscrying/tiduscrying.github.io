@@ -29,14 +29,14 @@ github_username:  tiduscrying
 
 permalink: /:year/:month/:day/:title/
 
-minima:
-  skin: dark
-  date_format: "%b %-d, %Y"
-
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+minima:
+  skin: dark
+  date_format: "%b %-d, %Y"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
