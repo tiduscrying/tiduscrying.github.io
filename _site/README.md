@@ -1,2 +1,0 @@
-# tiduscrying.github.io
- shitsite
