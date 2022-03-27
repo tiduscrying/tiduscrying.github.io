@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Skulls (Coreboot) on a Thinkpad X230"
+title:  "Installing Skulls (Coreboot) on a Thinkpad X230"
 date:   2022-03-27
 categories: thinkpad
 ---
@@ -61,6 +61,11 @@ The whole process of dumping my BIOS, flashing Skulls and then installing my OSe
 Overall, if you understand what little sacrifices you may have to make and have the patience to troubleshoot things as they come, Skulls is a pretty rewarding project that enhances the ThinkPad experience for those who have the curiosity to take up the project. Vanilla Coreboot absolutely offers more control and options if you want to customize how your system boots (like loading directly into GRUB or keeping UEFI support), but for people with less time on their hands, Skulls was seriously easy to do. 
 
 I would highly recommend the project to users of the X230 lineup. It is definitely not for everyone, and maybe I am not the perfect example of the target audience for Coreboot, but it was a rewarding challenge and really makes me feel like I own my X230 just _that_ much more. 
+
+For more detailed guides on getting Skulls/Coreboot up and running on your own X230, here are some of the links I followed: 
+- https://www.chucknemeth.com/laptop/lenovo-x230/flash-lenovo-x230-coreboot
+- https://famicoman.com/2020/07/30/corebooting-the-thinkpad-x230-with-skulls/
+- https://github.com/merge/skulls/tree/master/x230
 
 ---
 
