@@ -81,6 +81,8 @@ For a 4th gen i5 4200M, 8GB of RAM and a 250GB SSD... Maybe not the _best_ price
 
 I did end up upgrading the processor, trying different cooling solutions, adding USB-C charging and turning the T440P into a very usable Hackintosh, but given how long this post already is (and how I tend to ramble), I'll try to make it a new post.
 
+---
+
 If you've stumbled upon this post and managed to stick around until now, thanks for giving it a read. I already have more things I want to talk about once I figure out how to get Jekyll and this blog up and running. Stay tuned in if you're interested!
 
 ~ Tiduscrying (02-14-22)
