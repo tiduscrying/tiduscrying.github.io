@@ -1,11 +1,9 @@
 ---
 layout: post
 title:  "Skulls (Coreboot) on a Thinkpad X230"
-date:   2022-03-27 17:48 -0500
+date:   2022-03-27
 categories: thinkpad
 ---
-
-# Skulls (Coreboot) on a ThinkPad X230
 
 ## ...why?
 After realizing I really no longer had a main use for my beloved ThinkPad X230, I figured I would dick around with it and attempt to install Skulls, which (for the uninitiated) is distribution of the free BIOS replacement known as Coreboot. Coreboot is meant to replace proprietary motherboard BIOSes on a handful of systems (mostly ThinkPads and some other purpose built computers such as servers and Chromebooks). On the surface, it is more or less a loader that will launch into a specific payload. In the instance of Skulls, it is configured to launch into something calle "SeaBIOS" which is a more traditional legacy MBR BIOS implementation. Other options such as Tianocore (which focuses on UEFI OSes) or GRUB (which is often used to load Linux) can be installed and configured with normal Coreboot, but neither are (currently) distributed with Skulls. 

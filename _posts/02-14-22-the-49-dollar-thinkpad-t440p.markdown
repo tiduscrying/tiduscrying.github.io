@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The $49* ThinkPad T440P"
-date:   2022-02-14 16:01 -0500
+date:   2022-02-14
 categories: thinkpad
 ---
 ![stinky](https://github.com/tiduscrying/tiduscrying.github.io/raw/main/_images/t440p/Snipaste_2022-02-14_16-15-51.png)
