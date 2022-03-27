@@ -6,7 +6,7 @@ categories: thinkpad
 ---
 ![](https://github.com/tiduscrying/tiduscrying.github.io/raw/main/_images/x230/PXL_20220218_025043633.jpg)
 
-_The two BIOS chips of my X230_
+> _The two BIOS chips of my X230_
 
 ## ...why?
 After realizing I really no longer had a main use for my beloved ThinkPad X230, I figured I would dick around with it and attempt to install [Skulls](https://github.com/merge/skulls), which (for the uninitiated) is distribution of the free BIOS replacement known as [Coreboot](https://www.coreboot.org/). Coreboot is meant to replace proprietary motherboard BIOSes on a handful of systems (mostly ThinkPads and some other purpose built computers such as servers and Chromebooks). On the surface, it is more or less a loader that will launch into a specific payload. In the instance of Skulls, it is configured to launch into something calle "SeaBIOS" which is a more traditional legacy MBR BIOS implementation. Other options such as Tianocore (which focuses on UEFI OSes) or GRUB (which is often used to load Linux) can be installed and configured with normal Coreboot, but neither are (currently) distributed with Skulls. 
@@ -19,7 +19,12 @@ Skulls is just the next logical step to me for true ownership of my old X230. If
 
 ## Flashing Skulls versus using 1vyrain
 ![](https://github.com/tiduscrying/tiduscrying.github.io/raw/main/_images/x230/PXL_20220218_024419360.jpg)
+
 Yeah... I didn't brick mine _this time_, but the concept of freedom doesn't always blend with what people still want to use their laptops for. I have seen multiple attempts at using Coreboot/Skulls end poorly for someone because they expected things that weren't possible anymore. Things like Skulls are a trade off; you get rid of the proprietary Intel _junk_ that you don't want, but also sacrifice modern features and more advanced control. The advanced menu you can unlock on the X230 via [1vyrain](https://github.com/n4ru/1vyrain), for example, gives you incredibly granualar (and potentially dangerous) control of a _lot_ of things. 1vyrain on it's own is a good place to stop for many people as it is still based on the original ThinkPad BIOS but removes the whitelists and adds an advanced menu while still retaining the ability to boot via legacy or UEFI. Skulls is a significantly more stripped down approach, but this is purposeful. The point of Skulls isn't to give you every single option as far as tweaking frequencies and thermal limits for your laptop; it is to essentially strip the BIOS down to it's bare necesseties and cut out all of the crap that isn't necessary, including Intel ME. It's worth mentioning for the people who hate Intel ME, but don't want to get into risky hardware flashes for something such as Skulls or Coreboot that 1vyrain _does_ technically have options for soft-disabling Intel ME. This option adds almost 5 additional seconds to startup time though, mostly because of how it disables ME. It is also possible to run the "me_cleaner" script on an 1vyrain modified BIOS, which may be a better stopping point for many instead of going all the way to Skulls/Coreboot.
+
+![throwback](https://github.com/tiduscrying/tiduscrying.github.io/raw/main/_images/x230/IMG_20200710_010247.jpg)
+
+> _Throwback to when I originally modified my (then very broken) X230's BIOS via 1vyrain_
 
 The whole process of using 1vyrain to unlock the stock BIOS is quite simple in comparison to your standard Skulls/Coreboot install. 1vyrain even apparently offers flashing Coreboot or Skulls images, but I have yet to see anyone document this process and the 1vyrain page doesn't go into much detail on it. Flashing just the modified BIOS using 1vyrain is done using a bootable image off of a USB stick and then flashing internally as if it was a vanilla BIOS update done through the OS, no additional hardware required. In contrast, flashing Skulls the first time required that I take apart my laptop, locate and identify the two BIOS chips on the motherboard and then use a hardware flasher to dump, modify and reflash the BIOS. To me, since I had only just recently did some hardware flashing on my T440P, this wasn't the most challenging or worrying thing in the world. I felt significantly more confident this time around since I knew my flasher worked and I had some fresh, spare clips laying around to use. 
 
