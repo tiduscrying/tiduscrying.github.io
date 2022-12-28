@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Untitled"
+date:   2022-04-12
+categories: dreamcast, other
+---
+Let me preface this by stating a few things about myself: 
+- Once I start a project, I _must_ finish it, no matter what the cost.
+- I often let things get a bit out of control.
+- I am just a _little_ bit crazy.
+
+Back in the Summer of 2021, I had a week of PTO to burn through, so I took a week off in mid-August. I enjoy projects that take up my time; whether it's research, actually doing something or even just preparing to take on a project, I love getting lost in something. For my week off, I chose to commit to a little fever dream I had of refurbishing and upgrading a broken Dreamcast. 
+
+Dialing things back a bit, the only reason I was _ever_ interested in the Dreamcast was because I had seen them at conventions over the years and read about them online. The occasional bundle would show up behind the glass case at retro game shop nearby, but I never purchased one. I had heard a lot about Dreamcast piracy, and it interested me. Having already hacked a PS2, original Xbox, Wii, 3DS, DS and PSP, I figured Dreamcast hacking would be a cool thing to do one-day. The Dreamcast can read most normally burned discs, despite using a special format back when it came out. This made the piracy and homebrew scene for the console massive and probably contributed to it's early demise. Having experience burning discs back when I had originally hacked my PS2, I was reminded how tedious and time-consuming it would be to build up a spindle of worth-while games. Seeing projects like the GDEMU pop up over time made me really curious about ditching the disc drive entirely for older systems like the Dreamcast. 
