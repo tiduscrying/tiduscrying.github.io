@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Oh God, I bought a Chromebook"
+date:   20XX-01-07
+categories: thinkpad, linux
+---
+_*Ok, it's actually kind of a nice one, alright?!*_
+
+# I've Actually Gone Insane (Prelude)
+I am a hypocrite; A massive one. For _years_ I have detested the existence of the Chromebook. At work we frequently dunk on them. We make fun of the elderly for trying to check them in for "virus scans". _"They're not really computers"_ we would often say. _"They're glorified tablets with legs"_. I was partially wrong. Partially, because here I am, typing this whole thing on my shiny new Chromebook. 
+
+To be completely honest, the vast majority of Chromebooks are _actual_ dogshit. They're cheap, feel awful and have horrible specs. The most commonly returned ones during the holiday season are $99, have some sort of bottom-of-the-barrel "Intel Inside" processor, 4GB of RAM and some puny amount of EMMC storage. It's important to keep in mind though that for the most part, the target audience of these devices are schools, cheapskates and the elderly. That being said, there has always been this very small niche of devices in the Chromebook aisle that perplexed me: the super high end ones. 
+
+Think the Google made PixelBook line-up. Premium hardware, high end specs, but _still Chrome OS_...? Why spend between $600 and $1000 on a glorified tablet? I never understood their existence. If the OS was so simple and lightweight, why bother with hardware _that_ nice? Metal chassis, high resolution displays, competent processors with what always seemed like ludicrous amounts of RAM and storage for a Chromebook.
+
+Well, now I kind of get it. Those devices go directly against the modern scheme of Chrome OS and Chromebooks as a whole and are instead meant for people who actually kind of know what they're getting. At first I just assumed devices that nice were only being purchased by people who sought to turn them into Linux laptops, but after actually purchasing a "high end" model and using it for the past few weeks, I actually kind of dig it? 
+
+My local Best Buy was selling an Asus C433-TA convertable model "Open Box" for $166.00. It is an all metal device with a pretty striking 14" 1080p touch-screen display. Under the hood is a 15W "8th Gen" Intel M3-8100Y (which is a dual core, four thread 1.10ghz processor with a boost frequency of 3.4ghz), 8GB of RAM and 64GB of EMMC storage (expandable via MicroSD if you're a weirdo). This model originally released in 2020 for around $500, so it _has_ been around for awhile and will only be receiving support until 2026 versus some newer models. 
+
+I have been enjoying my time with the damned thing way more than I should be. The battery life is _fantastic_ compared to my ThinkPads, neither of which are able to eek out more than 4-5 hours of runtime. The low wattage CPU is passively cooled, meaning my lap isn't being slowly roasted whenever I use the device in bed, which is a nice bonus. It feels wrong to like something like this when I have my ThinkPads that I have spent genuine money and time on fiddling with so they would meet my needs. To have this thing surpass them in some regards just by existing as-is is unfathomable to me. I feel so _dirty_ by loving this thing.
+
+## The Chrome OS Paradigm
+Shockingly, Chrome OS has become pretty mature. In addition to the Chrome browser, modern Chrome OS also has fully realized Android App support and a Linux subsystem that is no longer just hidden behind a developer beta. Chrome OS can actually become a decent OS with all the programs you more or less want so long as you also understand the limitations of the system.
+
+Now doing anything in Linux does kind of betray the "it just works" mentalitiy of PWAs (Progressive Web Apps) or Android Apps, but once enabled you actually have full access to a Debian container that is able to install any package you'd like from current up-to-date repositories. There are a few limitations put on the VM, such as hardware acceleration being disabled by default and it taking 10GB of your precious EMMC storage straight out the gate, but there are workarounds for just about every little issue I had. What came as an _absolute_ shock to me was that enabling the Linux subsystem allows you to just double click any old `*.deb` file and it'll install and show up in your application drawer. I did this with Discord and VS Code without any issues. You can even right click the icon in the application drawer and uninstall it without ever opening a terminal window. Not lying at all, that floored me. How could the OS I dunked on for so long as being lightweight trash actually impress me?
+
+Being part of the Bot Net (TM), I also have a Pixel 5a and multiple tablets. That aside, I've also used Chrome on my desktops for years, so I am already quite deeply integrated into the Chrome OS/Google ecosystem. This meant that as soon as I logged into my Chromebook and signed into my Google account, all of my bookmarks, Google Drive files and even Android apps were immediately accessible. Pairing my phone also let me access recent files directly on my Chromebook without plugging anything in, mirror messages and notifications across both devices and instantly unlock my Chromebook as long as my phone was right next to it. That kind of "seamless just-werks-ness" is something I've only ever seen on Mac devices, but the way Google has built Chrome OS has proven that they want to be like their big bro even harder (the UI's centered dock most certainly reinforces this too).
