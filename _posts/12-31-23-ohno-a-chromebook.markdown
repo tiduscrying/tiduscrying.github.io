@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Oh God, I bought a Chromebook"
-date:   20XX-01-07
+date:   2023-12-31
 categories: thinkpad, linux
 ---
 _*Ok, it's actually kind of a nice one, alright?!*_
