@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The 8-inch Aliexpress Laptop"
-date:   2024-03-31
+date:   2024-04-03
 categories: windows, linux
 ---
 ![adorable](https://github.com/tiduscrying/tiduscrying.github.io/raw/main/_images/p8-laptop/PXL_20240317_165755680.jpg)
@@ -76,7 +76,12 @@ Inside you can see the funky L-shaped battery, labeled `WYC705812-3S`. This mean
 ![BIOS](https://github.com/tiduscrying/tiduscrying.github.io/raw/main/_images/p8-laptop/PXL_20240317_151654102.jpg)
 > The BIOS chip, a FM25W1282324J00
 
-I've been using [BatteryBarPro](https://batterybarpro.com/) to show a more detailed battery meter on the taskbar of this thing and I really like it quite a bit. I TRIED to buy a legitmate license for the software because the website actually still sells it, but the key I received refuses to activate. Archive.org has an [upload](https://archive.org/details/battery-bar-pro-v-3.6.6) with a registered version plus some nice themes I have been using instead. _Oh well..._ ¯\\_(ツ)_/¯
+Additionally, I've been using [BatteryBarPro](https://batterybarpro.com/) to show a more detailed battery meter on the taskbar of this thing and I really like it quite a bit. I TRIED to buy a legitmate license for the software because the website actually still sells it, but the key I received refuses to activate. Archive.org has an [upload](https://archive.org/details/battery-bar-pro-v-3.6.6) with a registered version plus some nice themes I have been using instead. _Oh well..._ ¯\\_(ツ)_/¯
+
+Additional info; feel free to track the ongoing hunt to fix the panel under Linux here:
+- [Intel Gitlab bug tracker](https://gitlab.freedesktop.org/drm/intel/-/issues/9063)
+- [Original Linux Mint forum post I found detailing the issues](https://forums.linuxmint.com/viewtopic.php?t=406917)
+- [OpenSUSE bug report](https://bugzilla.opensuse.org/show_bug.cgi?id=1216784)
 
 # So...
 So I mean... Kind of a mixed bag? But fun nonetheless. I am impatiently refreshing the bugtracker report for the Intel Linux drivers to see if anyone happens to figure something out - be it with a BIOS mod or some kernel/driver fuckery. I do think the novelty of being able to run full Windows on a device this small _is_ one of the main selling points, but having a teeny tiny Linux lappy that isn't based on an RPi or some other ARM SBC is a cool concept too. 
@@ -87,4 +92,6 @@ I think for the price and immediate availability, this thing is pretty fun. It's
 
 Yeah, so I am going to try my fuckin damnedest to keep finding reasons to post here. I want to have a funny little page where people can randomly search something and find my website and then go "wow, this guy is a fuckin _weirdo_", but in like... a helpful "I sure am glad this page existed" kind of way. 
 
-Yeah. 
+Yeah man. 
+
+~ Tiduscrying 04-03-24
