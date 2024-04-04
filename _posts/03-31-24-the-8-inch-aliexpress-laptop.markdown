@@ -22,7 +22,7 @@ The thing is, getting stuff off AliExpress is a bit of a committment. You go ahe
 ![undeniableproof](https://github.com/tiduscrying/tiduscrying.github.io/raw/main/_images/p8-laptop/Snipaste_2024-04-03_21-52-52.png)
 
 
-Essentially, I got a GPD Pocket 3 _clone_ off Amazon for $320. I kinda dig it. 
+Essentially, I got a GPD Pocket 3 _clone_ off Amazon for ~$350. I kinda dig it. 
 
 # The Pros
 So in order to make this post more... digestable... I've decided to try limiting myself to a pros/cons style format. This kind of apes what I've already subjected my friends to on Discord and blasted into an Amazon review, but what the hell. I felt like posting here, so I am GOING TO. 
