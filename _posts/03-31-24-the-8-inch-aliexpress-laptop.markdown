@@ -4,7 +4,7 @@ title:  "The 8-inch Aliexpress Laptop"
 date:   2024-03-31
 categories: windows, linux
 ---
-![adorable](https://github.com/tiduscrying/tiduscrying.github.io/blob/main/_images/p8-laptop/PXL_20240317_165755680.jpg)
+![adorable](https://github.com/tiduscrying/tiduscrying.github.io/raw/main/_images/p8-laptop/PXL_20240317_165755680.jpg)
 > Pictured next to my trusty ole X230 (with it's shit ass dead battery)
 
 # _Why?_
@@ -19,7 +19,7 @@ I love buying dumb shit (as my blog may kind of already show by now) and I love 
 
 The thing is, getting stuff off AliExpress is a bit of a committment. You go ahead and blow $400-some-odd-dollars on something, wait 2 weeks to a month to arrive and then try to return it! That sounds like shit! Amazon? Jeff Bezos and his sweatshops? They kind of fuck with the whole equation. Being able to get something off Amazon, with Prime Shipping is a fucking _vice_. If you are an impulsive shopper Amazon is the fucking DEVIL. One fine afternoon working offsite recently, I got to perusing Amazon and noticed a LIGHTNING DEAL on this little bastard, the `Mini Laptop,8 inch HD Touch Screen Mini Computer Windows 11 Pro, Intel N100 4 cores 2-in-1 Pocket PC 12GB LPDDR5 RAM 512GB M.2 SSD, Gigibit | Wi-fi 6 | BT5.2 | 2MP Camera | G-Sensor | HDMI`. Name just _rolls_ off the tongue, doesn't it?. 
 
-![undeniableproof](https://github.com/tiduscrying/tiduscrying.github.io/blob/main/_images/p8-laptop/Snipaste_2024-04-03_21-52-52.png)
+![undeniableproof](https://github.com/tiduscrying/tiduscrying.github.io/raw/main/_images/p8-laptop/Snipaste_2024-04-03_21-52-52.png)
 
 
 Essentially, I got a GPD Pocket 3 _clone_ off Amazon for $320. I kinda dig it. 
@@ -32,7 +32,7 @@ So in order to make this post more... digestable... I've decided to try limiting
 - Windows 10 isn't the WORST on it. I'd prefer to be running Linux on the device, but there are issues preventing me from doing so that I'll detail more below. 
 - It can take a true NVME SSD which is kind of awesome. The stock drive wasn't horrible, but as an M2 SATA it topped out around 500mb/s. I got a "brand new OEM" WD Black 512GB NVME off of eBay for about $20 that fuckin _rips_ in comparison, clocking in around 3500mb/s write.
   
-![ssdcomparison](https://github.com/tiduscrying/tiduscrying.github.io/blob/main/_images/p8-laptop/SATA%20v%20NVME%20red.png)
+![ssdcomparison](https://github.com/tiduscrying/tiduscrying.github.io/raw/main/_images/p8-laptop/SATA%20v%20NVME%20red.png)
 > Comparison between the Stock MSATA SSD and the WD Black drive I got off eBay for $20
 
 - The touch screen is actually shockingly responsive and the included pen has full pressure support. I'm no artist, but it's pretty cool to have the option to whip out a pen and take notes. Assuming I do that sort of thing (I don't). 
@@ -67,13 +67,13 @@ So in order to make this post more... digestable... I've decided to try limiting
 # Random Things
 Here are some images I took that may find themselves to be useful eventually? Maybe?
 
-![the innards](https://github.com/tiduscrying/tiduscrying.github.io/blob/main/_images/p8-laptop/PXL_20240317_151452367.jpg)
+![the innards](https://github.com/tiduscrying/tiduscrying.github.io/raw/main/_images/p8-laptop/PXL_20240317_151452367.jpg)
 > The inside
 
 Inside you can see the funky L-shaped battery, labeled `WYC705812-3S`. This means and finds nothing as far as I can tell on Google. The "Standard" `GB31231-2014` does show that this is some sort of [mobile phone battery?](https://www.aliexpress.com/i/2255801144385114.html?gatewayAdapt=4itemAdapt)
 
 
-![BIOS](https://github.com/tiduscrying/tiduscrying.github.io/blob/main/_images/p8-laptop/PXL_20240317_151654102.jpg)
+![BIOS](https://github.com/tiduscrying/tiduscrying.github.io/raw/main/_images/p8-laptop/PXL_20240317_151654102.jpg)
 > The BIOS chip, a FM25W1282324J00
 
 I've been using [BatteryBarPro](https://batterybarpro.com/) to show a more detailed battery meter on the taskbar of this thing and I really like it quite a bit. I TRIED to buy a legitmate license for the software because the website actually still sells it, but the key I received refuses to activate. Archive.org has an [upload](https://archive.org/details/battery-bar-pro-v-3.6.6) with a registered version plus some nice themes I have been using instead. _Oh well..._ ¯\\_(ツ)_/¯
