@@ -65,6 +65,7 @@ So in order to make this post more... digestable... I've decided to try limiting
 - There is literally no website anywhere hosting actual drivers for this thing. Luckily, "Around In Circles" on YouTube has a [video](https://www.youtube.com/watch?v=CHjCIHhVC8U&t=2s) about it where they [link to an archive](https://aroundincircles.net/8-aliexpress-laptop-drivers/) they put together on their website.
 
 # Random Things
+## Some Photos
 Here are some images I took that may find themselves to be useful eventually? Maybe?
 
 ![the innards](https://github.com/tiduscrying/tiduscrying.github.io/raw/main/_images/p8-laptop/PXL_20240317_151452367.jpg)
@@ -76,8 +77,17 @@ Inside you can see the funky L-shaped battery, labeled `WYC705812-3S`. This mean
 ![BIOS](https://github.com/tiduscrying/tiduscrying.github.io/raw/main/_images/p8-laptop/PXL_20240317_151654102.jpg)
 > The BIOS chip, a FM25W1282324J00
 
+**Edit 04-05-24** I managed to soft brick my laptop by fucking with settings in the wild ass BIOS. I tried to dump this chip with my CH341a (black) flasher, but I couldn't get Flashrom to find the chip or ASProgrammer under Windows either. It's totally possible my flasher is just fucked up again (because it has recently managed to kill two T480s laptops :smile:) but I also don't know. 
+
+## Software
 Additionally, I've been using [BatteryBarPro](https://batterybarpro.com/) to show a more detailed battery meter on the taskbar of this thing and I really like it quite a bit. I TRIED to buy a legitmate license for the software because the website actually still sells it, but the key I received refuses to activate. Archive.org has an [upload](https://archive.org/details/battery-bar-pro-v-3.6.6) with a registered version plus some nice themes I have been using instead. _Oh well..._ ¯\\_(ツ)_/¯
 
+## Investigative Journalism (TM)
+When I was trying to find some information out on this thing, I did manage to find the manual from Amazon uploaded to a bunch of websites. I never looked at the paper manual myself because they're typically _garbage_ but interestingly enough, the paper manual lists what I am assuming is the actual model number for this thing, `2A8WM-P8`. Looking this up, you can find the [FCC registration](https://fcc.report/FCC-ID/2A8WM-P8) and some information on the company that filed for it. It was filed by "Shenzhen Anxin Taihe Technology Co., Ltd", which seems to have uploaded the instruction manual with Koosmile branding, but the [Alibaba page](https://sz-botu.en.alibaba.com/) for them lists the P8 and multiple other laptops without any branding at all. 
+
+The FCC filing includes multiple documents with photos. One is an [internal teardown](https://fcc.report/FCC-ID/2A8WM-P8/6693480) of the device, confirming that when I thought I bricked mine, I unplugged the speakers thinking it was a CMOS battery! Rookie mistake. 
+
+## The Panel
 Additional info; feel free to track the ongoing hunt to fix the panel under Linux here:
 - [Intel Gitlab bug tracker](https://gitlab.freedesktop.org/drm/intel/-/issues/9063)
 - [Original Linux Mint forum post I found detailing the issues](https://forums.linuxmint.com/viewtopic.php?t=406917)
