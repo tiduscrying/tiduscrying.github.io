@@ -32,6 +32,8 @@ As I said before when talking about the Koosmile, I prefer not to use Windows 11
 
 I had initially planned on using the Western Digital 2240 drive I purchased off eBay from my Koosmile, but unfortunately I discovered that the A1 Pro has an integrated NVME storage device soldered to the main board. This is weird and I was concerned the storage would be some sort of eMMC garbage at first, but every place I looked reported NVME speeds coming from the drive. CrystalDiskMark even got some respectable results peaking around 1700mb/s read and ~1200mb/s write. I wiped the drive and got Windows 10 LTSC installed, got Windows activated and began looking at Device Manager to see what I was missing driver wise. Annoyingly, One-Netbook has a link on their support site to download drivers for the vanilla A1, but _not_ the A1 Pro. This is a bummer, since there are some unique devices in play here such as the rotation and fingerprint sensors. Windows did a decent enough job of pulling what it could, but I had to resort to using Snappy Driver Installer to fetch the rest. 
 
+![inside](https://raw.githubusercontent.com/tiduscrying/tiduscrying.github.io/main/_images/a1pro/PXL_20240415_001853890.jpg)
+
 I noticed once I had everything installed and Device Manager was happy this cons.. tant... stut.. ter? A little bit of a freeze every now and then in pretty much any application, under any load. At first, I thought that this was a display driver issue since I hadn't noticed it until _after_ I installed Intel Iris XE graphics, and back in the day I used to see things like this all the time with old integrated AMD Catalyst graphics drivers. No matter which version or how I installed the drivers, the behavior wouldn't go away. Doing some digging online, I saw some generic suggestions such as disabling "Dynamic Tick/HPET" which I _thought_ made a difference, but not really. I also tried various things within the Intel Arc Graphics and legacy control panels as far as disabling/configuring energy saving modes specific to the GPU but those didn't do anything either.
 
 What did resolve the issue was actually something a bit weirder. In the Windows power profile settings I turned off "Link State Power Management" and that _shockingly_ resolved the problem almost immediately. This was another suggestion I came across in a discussion for a completely different device, but I'm still thinking this could have been doing _something_ to the graphics device or drive possibly. 
@@ -77,8 +79,13 @@ Me being me though, this wasn't enough. One of the things that puzzled me was th
 Another tool I found online allowed me to write to the otherwise blank BIOS strings. From there, I induldged my absolute inner weirdo and fixed the missing strings to the best of my ability, setting "Vendor" to "One-Netbook", "Model" to "A1 Pro" and even setting the "SKU" to the one printed on the bottom of my device, "A1Pro-i5-1130G7-16G-512G". This is something that matters to absolutely no one other than myself -- I realize this -- but also please understand I am a crazy person so I felt really cool after getting this done. I was especially tickled by the fact that I ran into relatively few issues modding the BIOS compared to my other previous modding endeavours. 
 
 # Linux
+
+![endeavourOS](https://raw.githubusercontent.com/tiduscrying/tiduscrying.github.io/main/_images/a1pro/self%20portrait.png)
+> *I use arch, btw*
+
+
 Oh shit, speaking of _Endeavours_, I tried EndeavourOS and quite a few other Linux Distros on the A1 Pro. The A1 Pro has the _very_ neat capability of booting off of a MicroSD card, so I've kept my Linux dabbling self-contained for the most part. 
- 
+
  Here are some notes about the different distros I tried including what worked/didn't work, etc.:
  - **EndeavourOS**: My flavor of choice when it comes to Arch and Arch-based distros. I use Endeavour on pretty much all of my ThinkPads, save for the T440p since Nvidia Optimus just worked best under Linux Mint. I installed the OS with KDE Plasma 6 and Wayland and had few issues with it aside from some weird KDE quirks. Display scaling is vital with this panel since it's so high res for such a small device and luckily I had no issues with fractional scaling under KDE 6. Setting the display to 175% scale worked fine and looked plenty sharp. Auto-rotation wouldn't work, despite trying a few things to get it recognized but admittedly I didn't spend too much time messing with it. USB devices, display brightness, keyboard shortcuts and the touch-screen all worked fine. KDE's default power profiles daemon left a bit to be desired, so I removed it in favor of TLP. With this setup, I was able to get close to 4 hours of battery life. Note that this testing was done BEFORE modding the BIOS, so it's possible with my TDP adjustments that I could get a smidge more.
  
@@ -106,6 +113,7 @@ I guess this warrants a bit of a summary since I ended up just kind of... vomiti
 - The weight of the device is significantly lighter feeling than the Koosmile, which is nice, but it also feels... unsubstantial? I don't know, there's something about the lack of "heft" that makes me concerned about the durability of the thing.
 - The BIOS was easy to modify, which is nice I guess if you don't mind getting your hands dirty.
 - The SSD is very fast out of the box, but... not replaceable. Major bummer.
+![ssd](https://raw.githubusercontent.com/tiduscrying/tiduscrying.github.io/main/_images/a1pro/Screenshot%202024-04-26%20193735.png)
 - Touch-pad nubbin is far more usable than you'd expect, but you still can't do anything other than moving the cursor and tapping the sensor to click with this one. No scrolling functions or anything like that.
 
 ### Cons:
