@@ -4,10 +4,10 @@ title: "So I returned the 8-inch Aliexpress Laptop..."
 date: 2024-06-03
 categories: windows, linux
 ---
-#Yeah...
-So about that Koosmile Laptop, ya'know, the  "Mini Laptop,8 inch HD Touch Screen Mini Computer Windows 11 Pro, Intel N100 4 cores 2-in-1 Pocket PC 12GB LPDDR5 RAM 512GB M.2 SSD, Gigibit | Wi-fi 6 | BT5.2 | 2MP Camera | G-Sensor | HDMI". that I wrote about semi-recently. We had our good times! Great battery, decent display, nice hefty weight to it... I replaced the SSD, that was great. Got some good speeds out of that. Could never get Linux running on it! But that's okay! Windows on a small device was novel enough to justify that thing, right? 
+# Yeah...
+So about that Koosmile Laptop, ya'know, the  `Mini Laptop,8 inch HD Touch Screen Mini Computer Windows 11 Pro, Intel N100 4 cores 2-in-1 Pocket PC 12GB LPDDR5 RAM 512GB M.2 SSD, Gigibit | Wi-fi 6 | BT5.2 | 2MP Camera | G-Sensor | HDMI` that I wrote about semi-recently. We had our good times! Great battery, decent display, nice hefty weight to it... I replaced the SSD, that was great. Got some good speeds out of that. Could never get Linux running on it! But that's okay! Windows on a small device was novel enough to justify that thing, right? 
 
-I fucking hated that USB-A port being upside down. 
+_I fucking hated that USB-A port being upside down._ 
 
 I've said it before, I'll continue saying it -- I am a crazy person. Call it OCD, call it ADHD, call it _whatever_, I am certifiably crazy and the tiniest little insignificant things become Hell for me. I obsess and think about things for no good reason that I don't like. For the Koosmile, it was the USB-A port being upside down that broke me down.
 
@@ -21,11 +21,13 @@ Another device that caught my eye when I was initially looking at the Koosmile t
 
 Yes, the A1 Pro is more expensive than the Koosmile by almost double the price. One Netbook lists the i3 model on its website for ~$500-$600 and it can be had off Aliexpress for just the same. It seemed like, possibly due to age, the A1 Pro's i5 and i7 variants weren't really available anywhere else. BUT, luckily, conveniently, bizarrely, I came across a listing on the US version of Mercari for the i5 variant (i5-11307g) complete-in-box for $450. I caved. 
 
+![wow](https://raw.githubusercontent.com/tiduscrying/tiduscrying.github.io/main/_images/a1pro/PXL_20240415_012606687.jpg)
+
 After about a week, the A1 Pro arrived in shockingly good condition. The previous owner had said they were trying to lighten their load from projects and items they no longer used, but I wasn't expecting them to keep _everything_ in tact with the device. I'm talking the little foam/cloth piece covering the keyboard here, plus the original plastic on the device. 
 
 The device is significantly lighter than the Koosmile was, and the display is about an inch smaller at 7 inches. That said, it's got an insanely high res panel (1920x1200) and a way more comfortable keyboard to type on. I was pretty pleased with the presentation right out of the box, but as with everything -- there were some issues. 
 
-#Windwoes
+# Windwoes
 As I said before when talking about the Koosmile, I prefer not to use Windows 11. I hated it when it came out, still hate it to this day even with all the updates. My preferred Windows version for laptops has been Windows 10 LTSC even though the last version of it is based on the increasingly out-of-date 21H2 update of Windows 10. It still receives security updates, but nixes all of the other bullshit typically included with Windows 10 Home and even Pro. Windows UWP apps, the Microsoft Store and a ton of internal services are completely absent from LTSC, which makes it overall a lot leaner for me to use. Licensing LTSC isn't really something average consumers can do, but the always helpful Massgrave scripts make this a non-issue. 
 
 I had initially planned on using the Western Digital 2240 drive I purchased off eBay from my Koosmile, but unfortunately I discovered that the A1 Pro has an integrated NVME storage device soldered to the main board. This is weird and I was concerned the storage would be some sort of eMMC garbage at first, but every place I looked reported NVME speeds coming from the drive. CrystalDiskMark even got some respectable results peaking around 1700mb/s read and ~1200mb/s write. I wiped the drive and got Windows 10 LTSC installed, got Windows activated and began looking at Device Manager to see what I was missing driver wise. Annoyingly, One-Netbook has a link on their support site to download drivers for the vanilla A1, but _not_ the A1 Pro. This is a bummer, since there are some unique devices in play here such as the rotation and fingerprint sensors. Windows did a decent enough job of pulling what it could, but I had to resort to using Snappy Driver Installer to fetch the rest. 
@@ -34,16 +36,16 @@ I noticed once I had everything installed and Device Manager was happy this cons
 
 What did resolve the issue was actually something a bit weirder. In the Windows power profile settings I turned off "Link State Power Management" and that _shockingly_ resolved the problem almost immediately. This was another suggestion I came across in a discussion for a completely different device, but I'm still thinking this could have been doing _something_ to the graphics device or drive possibly. 
 
-#Power & Heat
+# Power & Heat
 I noticed pretty quickly that the A1 Pro was kicking off a TON of heat and the fans were ramping up and going non-stop. It became clear to me pretty quick that this i5 was resulting in a way toastier device than the Koosmile. The Koosmile's ample Intel N100 ran at 6W and never really got hot. It also _sipped_ battery like a champ, lasting up to 6 hours. 
 
 The A1 Pro however was barely breaking 3 hours of battery time and was getting pretty toasty. I booted to the BIOS to take a look at some settings but was surprised to see the options were incredibly sparse -- again, in comparison to the Koosmile that gave every option (safe and unsafe) available. The only setting for any sort of performance adjustment was on the main page, allll the way down right before the System Language option to adjust the PL1 value. I tried setting a few different things after seeing that the Intel Ark page for the i5-1130G7 showed the CPU having a TDP of 7W to 20W. Setting the PL1 value in the BIOS to "7000" didn't seem to really change much and ideally, I wanted to figure out how to stretch the battery life of this thing as much as possible if I ever wanted to use it as a tool. 
 
-I tried mucking around with ThrottleStop, but it has been quite some time since I last used it. Then I was mostly using (a guide)[https://seiba.gitlab.io/thinkpad-t440p-upgrade-guide/] to undervolt the i7-4712MQ that I had installed in the $49 T440p. 
+I tried mucking around with ThrottleStop, but it has been quite some time since I last used it. Then I was mostly using [a guide](https://seiba.gitlab.io/thinkpad-t440p-upgrade-guide/) to undervolt the i7-4712MQ that I had installed in the $49 T440p. 
 
 Looking at the default "Balanced" power plan in Windows wasn't really giving me the options I wanted either. I ended up downloading a tool called "PowerSettingsExplorer" that exposed typically hidden values in the default Windows power profiles. Here, I played a bit more with maximum clock speeds, disabling turbo boost and a few other things. I was getting things around where I wanted them to be temperature and performance wise, but I really wished I could go into the BIOS to mess with more. Looking at the BIOS, there were pretty much no options on customizing power or performance modes aside from a "PL1 value" setting on the main page. Interestingly enough too, the BIOS only had tabs for "Security" and "Boot", nothing else. This was annoying and even messing with the singular PL1 value wasn't really getting me anywhere.  I began trying to figure out how I could try to get the BIOS to show me more and let me play with other options...
 
-#Modding the BIOS
+# Modding the BIOS
 ... Which brings me to something I have almost done on every single laptop I own, modding the BIOS! Oh what fun, isn't it? Granting yourself absolute access to settings that you aren't typically supposed to mess with is so _fun_, especially with the looming risk of bricking things. Why am I like this...?
 
 I had seen some posts on Reddit about another One-Netbook device, their OneXPlayer, which is a way more gaming oriented AMD based handheld. A few forum posts had people who messed with dumping the BIOS and modifying values to bring back the menus that One-Netbook had intentionally hid. There was some loose instructions floating around on what to do that I more or less pieced together from a few different sources. This all took a fair bit of time and patience, mostly since I had never done something quite like this before. Sure, I had dumped BIOSes manually with a hardware flasher and patched them with various tools, but this appeared to be a completely different process and I didn't end up needing to open the laptop up to put clips on the BIOS chip at all. 
@@ -52,11 +54,13 @@ I had seen some posts on Reddit about another One-Netbook device, their OneXPlay
 
 The A1 Pro uses an AMI Aptio V based BIOS, which is quite well documented on sites like Win-Raid and Bios-Mods. Dumping this kind of BIOS can be done internally, which was pretty cool. In order to get started, I had to find out the current version of Intel ME that my system was on. This would allow me to use the proper Intel ME flashing utilities to gain access to the BIOS (and both ME and non-ME regions of it) so that I could dump and modify it. 
 
-Using HWInfo, I saw that the A1 Pro was using Intel ME version 15.0. From there, I downloaded the CSME tools from (this thread)[https://winraid.level1techs.com/t/guide-usage-of-ami-s-aptiov-uefi-editor-fpt-flash-method/91842] on the WinRaid forums. In the download was a folder for "CSME System Tools v15.0 r15" which seemed like it should match my Intel ME version. Deeper within was the folder for Intel's "Flash Programming Tool" (a.k.a. Intel FPT) which is the actual program used to read and dump the BIOS, assumedly during legit Intel ME updates. Following some additional instructions from Reddit, I used the Win32 executable in CMD to dump my BIOS with the following command: `fptw.exe -bios -d biosoriginal.bin`. This provided me with a roughly ~11mb file, not 16MB so it was ONLY the portions of the BIOS without Intel ME. Just to be safe (and because I didn't really know what all I needed), I dumped the remaining ME portion as well with the command `fptw.exe -me -d meoriginal.bin`, and then the entire image with `fptw.exe -d fullbiosoriginal.bin`. Because history tends to repeat itself well with me, I stored all three of my dumped files elsewhere just in case I was about to brick this thing. 
+Using HWInfo, I saw that the A1 Pro was using Intel ME version 15.0. From there, I downloaded the CSME tools from [this thread](https://winraid.level1techs.com/t/guide-usage-of-ami-s-aptiov-uefi-editor-fpt-flash-method/91842) on the WinRaid forums. In the download was a folder for "CSME System Tools v15.0 r15" which seemed like it should match my Intel ME version. Deeper within was the folder for Intel's "Flash Programming Tool" (a.k.a. Intel FPT) which is the actual program used to read and dump the BIOS, assumedly during legit Intel ME updates. Following some additional instructions from Reddit, I used the Win32 executable in CMD to dump my BIOS with the following command: `fptw.exe -bios -d biosoriginal.bin`. This provided me with a roughly ~11mb file, not 16MB so it was ONLY the portions of the BIOS without Intel ME. Just to be safe (and because I didn't really know what all I needed), I dumped the remaining ME portion as well with the command `fptw.exe -me -d meoriginal.bin`, and then the entire image with `fptw.exe -d fullbiosoriginal.bin`. Because history tends to repeat itself well with me, I stored all three of my dumped files elsewhere just in case I was about to brick this thing. 
 
 Next, all I had to do was follow the instructions provided by the GitHub page for the online AptioV editing utility, UEFI-Editor. This was not challenging to follow at all and I was able to obtain all of the necessary files out of my BIOS dump to edit via the editor. Opening my files up showed that the "Advanced" and "Chipset" tabs were disabled in the BIOS. I went ahead and re-enabled the tabs, re-injected the files into the BIOS dump and reflashed. I then crossed my fingers, said a prayer and rebooted. 
 
 Nada! Nothin. It booted, so that was a relief but the changes I made to the dump weren't appearing. Looking at the UEFI-Editor documentation, there was a blurb about some manufacturers permanently removing tabs and instructions on  how to replace existing tabs with removed ones. Following this, I went ahead and disabled the "Security" tab and replaced it with "Advanced" in the editor. Same process with saving, injecting and flashing. Rebooted aaaand....
+
+![tada](https://raw.githubusercontent.com/tiduscrying/tiduscrying.github.io/main/_images/a1pro/PXL_20240424_015724878.NIGHT.jpg)
 
 Success! I finally had access to some more options! Messing with things and combing through menus, I found a ton of settings I didn't really know shit about, but started tweaking. I was trying to see if there were settings for turbo, clockspeed or power limits. Eventually, I found the section dedicated to tweaking TDP values. After a few actual days, I finally got things tweaked to the point where it seemed it had made a difference. 
 
@@ -72,7 +76,7 @@ Me being me though, this wasn't enough. One of the things that puzzled me was th
 
 Another tool I found online allowed me to write to the otherwise blank BIOS strings. From there, I induldged my absolute inner weirdo and fixed the missing strings to the best of my ability, setting "Vendor" to "One-Netbook", "Model" to "A1 Pro" and even setting the "SKU" to the one printed on the bottom of my device, "A1Pro-i5-1130G7-16G-512G". This is something that matters to absolutely no one other than myself -- I realize this -- but also please understand I am a crazy person so I felt really cool after getting this done. I was especially tickled by the fact that I ran into relatively few issues modding the BIOS compared to my other previous modding endeavours. 
 
-#Linux
+# Linux
 Oh shit, speaking of _Endeavours_, I tried EndeavourOS and quite a few other Linux Distros on the A1 Pro. The A1 Pro has the _very_ neat capability of booting off of a MicroSD card, so I've kept my Linux dabbling self-contained for the most part. 
  
  Here are some notes about the different distros I tried including what worked/didn't work, etc.:
@@ -86,7 +90,7 @@ Oh shit, speaking of _Endeavours_, I tried EndeavourOS and quite a few other Lin
  
  Endeavour has stayed on my MicroSD card for now -- I mess with it every now and then, playing with different things and tweaking settings (like rotating the text before the system boots, using a higher resolution TTY font, fixing SDDM's scaling before logging in, etc.) yet I still don't daily drive it. Ultimately, I've decided much like the Koosmile that the novelty of having full fat Windows on something this small outweighs my desire to have yet another tiny Linux device.
 
-#So, anyways!
+# So, anyways!
 I guess this warrants a bit of a summary since I ended up just kind of... vomiting words... into Notepad about this without much rhyme or reason. I try to keep my ramblings somewhat structured, but I can't say this is anything like that. Some Pros/Cons might make this a bit more parsable:
 
 ### Pros:
@@ -104,7 +108,7 @@ I guess this warrants a bit of a summary since I ended up just kind of... vomiti
 - The SSD is very fast out of the box, but... not replaceable. Major bummer.
 - Touch-pad nubbin is far more usable than you'd expect, but you still can't do anything other than moving the cursor and tapping the sensor to click with this one. No scrolling functions or anything like that.
 
-## Cons:
+### Cons:
 - Pretty much no upgradability or repairability with this little fella. Not even the battery gives me much confidence; despite being able to find replacements on Aliexpress, the battery connector looks completely different between the listings and my device. It's possible the A1 (non-pro) used a different connector and these are all listings for _that_ but I am not sure. The battery is also GLUED DOWN which is fucking SHITTY. BOO!!
 - The SSD being soldered to the board really irritates me, so I am mentioning it TWICE even if it's fast! Hmph!
 - With beefier specs than the Koosmile, the battery life really kinda stinks. Even with some significant tweaking, I can't get anywhere close to the Koosmile's near 6-hour runtime.
