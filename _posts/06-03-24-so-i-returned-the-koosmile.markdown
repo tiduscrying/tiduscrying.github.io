@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "So I returned the 8-inch Aliexpress Laptop..."
+title: "So I returned the 8-inch Aliexpress Laptop... And bought another."
 date: 2024-06-03
 categories: windows, linux
 ---
