@@ -1,4 +1,12 @@
+---
+layout: post
+title:  "Finally Abandoning Windows 10"
+date:   2026-01-06
+categories: windows, linux
+---
+
 *From the perspective of a Gamer and long-time (but casual) Linux User*
+
 *FYI, this post is pretty long and verbose. TL;DR: NOBARA GOOD, WINDOWS BAD, NVIDIA ANNOYING.*
 
 Despite using Linux casually for a long time on a variety of devices, I have never taken the plunge in fully converting to Linux on my desktop. As much as I'd like to continue using Windows 10 for years to come, I've grown tired of Microsoft. I used to love using my computer and I've always had a fondness for Windows. My first real experiences with a computer were with Windows XP and Windows 7. Now that Microsoft is so hellbent on making the Windows experience as horrible as possible, shoving AI and telemetry into every corner of their OS ad nauseum, I feel I need to move on. 
